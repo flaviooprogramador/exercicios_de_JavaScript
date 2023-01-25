@@ -1,0 +1,66 @@
+body{
+    background: rgb(107, 142, 238);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+    padding: 19px;
+  
+}
+
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+
+}
+
+table{
+    
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+a:hover{
+    color: aliceblue;
+    font-size: 25px;
+    border-bottom: 20px ;
+   
+  }
+
+table:hover{
+    color: blue;
+
+}
+
+td:hover{
+    color: darkorange;
+    font-size: 25px;
+}
+
+td{
+    border-radius: 7px;
+}
+
+a{
+    color: yellow;
+}
