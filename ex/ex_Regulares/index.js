@@ -30,6 +30,8 @@
 //- **********(?<=)**********  positive look behind: encontra termos //que são precedidos por um determinado termo
 //- **********(?<!)**********  negative look behind: encontra termos //que não são precedidos por um determinado termo
 
+
+
 function PhoneNumber(phoneNumberString) {
   const fixedString = phoneNumberString.replace(/[\sa-zA-Z]/g, "")
   this.countryCode = fixedString.match(/(?<=\+)\d{1,3}/)[0]
