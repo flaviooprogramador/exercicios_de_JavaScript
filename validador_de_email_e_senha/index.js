@@ -6,6 +6,22 @@ function validateEmail(email){
   }
 }
 
+function validatePassword(password) {
+  if(
+    password.length < 8 ||
+    !password.match(/[a-z]/) ||
+    !password.match(/[A-z]/) ||
+    !password.match(/\d/) ||
+    !password.match(/[^a-zA-Z\s0-9]/)
+  ){
+    const err = new Error('Senha Inválida.')
+    err.input = 'password'
+    throw err
+  }
+}
+
+
+
 function resetFormstyles(inputs){ 
   Object.entries(inputs).forEach(([key,value]) => {
     value.classList.remove('sucess', 'error')
@@ -28,7 +44,9 @@ form.addEventListener('submit', (ev) =>{
   try {
     userInputs.name.classList.add('success')
     validateEmail(userInputs.email.value)
-    userInputs.email.classList.add('sucess')
+    userInputs.email.classList.add('success')
+    validatePassword(userInputs.password.value)
+    userInputs.password.classList.add('success')
   } catch (err) {
     userInputs[err.input].classList.add('error')
     document.querySelector(`#${err.input}-error`).textContent = err.message
