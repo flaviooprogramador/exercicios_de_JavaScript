@@ -30,3 +30,4 @@ async function asyncSquare(x) {
 Promise.all(numbers.map(number => asyncSquare(number))).then(squares => {
     console.log(squares)
 })
+
