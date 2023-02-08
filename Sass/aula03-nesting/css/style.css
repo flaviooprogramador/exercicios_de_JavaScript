@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*.classe1 ul{
+  background-color: red;
+}
+
+.classe1 li {
+  background-color: blue;
+}
+  essa seria a forma de usar sass sem o NESTING, bem como vemos a seguir o NESTING é uma forma bem mais bonita e organizada de se tabalhar :) 
+
+
+
+
+*/
+.classe1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.classe1 li {
+  display: inline-block;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.classe1 button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.classe1 button:hover {
+  background-color: rgb(11, 94, 247);
+  transition: 500ms;
+}
+.classe1 button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(9px);
+}
+
+/*# sourceMappingURL=style.css.map */
