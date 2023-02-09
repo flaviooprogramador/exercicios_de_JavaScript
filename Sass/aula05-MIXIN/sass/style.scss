@@ -4,6 +4,7 @@
   font-family: $font-family;
 }
 
+$primary-color: blue;
 
 .texts{
   h1{
@@ -11,7 +12,7 @@
     color: #ff4043; 
     font-size: 34px;
     font-family: Arial;*/
-    @include text-style(#ff4043, 34px, Arial)
+    @include text-style($primary-color, 34px, Arial)
   }
   p{
     /*color: blue;
