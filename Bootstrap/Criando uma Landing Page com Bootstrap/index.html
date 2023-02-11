@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumo a marte</title>
+  <!--Link do Bootstrap-->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <!--Link da imagem Favicon-->
+  <link rel="shortcut icon" href="img/FAVICON-SPACEX.png" type="image/x-icon">
+  <style>
+    img{
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center bg-dark text-white">
+    <img src="img/logoOneBitDark.png" alt="">
+          <!--PRIMEIRO NOME-->
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">1- Qual seu Nome?</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">Primeiro nome:</span>
+                <input type="text" class="form-control " id="validationCustomUsername" placeholder="Digite aqui" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback" >
+                    Please choose a username.
+                </div>
+                <div class="col-md-4">
+                 
+                  <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">Segundo nome:</span>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Digite aqui" required>
+                      <div class="invalid-feedback">
+                          Please choose a username.
+                      </div>
+
+
+  <!--Script Bootstrap-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
