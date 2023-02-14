@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <!-- Lib animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <style>
+    body{
+      background: rgb(11, 28, 85);
+      color: white;
+      font-size: 50px;
+    }
+
+    .container{
+      min-height: 100vh;
+    }
+   </style>
+
+
+</head>
+<body>
+  
+  
+  <div data-aos="fade-up" class="container">
+    <p>Hello,world!</p>
+  </div>
+  
+  <div data-aos="fade-down" class="container">
+    <p>Hello,world!</p>
+  </div>
+
+  
+  <div data-aos="flip-down" class="container">
+    <p>Hello,world!</p>
+  </div>
+
+  <div data-aos="flip-down" class="container">
+    <p>Hello,world!</p>
+  </div>
+
+  <div data-aos="flip-left" class="container" data-aos-duration="3000">
+    <p>Hello,world!</p>
+  </div>
+
+
+    <!-- Lib Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script
+</body>
+</html>
