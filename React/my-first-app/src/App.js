@@ -1,12 +1,16 @@
 import React from 'react';
-import HelloWorld from './hello';
+import Planets from './components/planets';
+
 
 function App() {
   return (
     <div>
-      <HelloWorld/>
+        <Planets/>
     </div>
+    
   );
+
+ 
 }
 
 export default App;
