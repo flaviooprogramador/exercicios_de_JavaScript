@@ -4,7 +4,7 @@ import DescriptionLink from "../shared/gray_img/WhitchLink/DescriptionWhitchLink
 const Planets = (props) => {
   return (
     <div>
-      <h3>Planet List</h3>
+    <h3>Planet List</h3>
       <hr/>
       <Planet name="Mercurio"
       Text=" Para o deus da mitologia romana, consulte Mercúrio (mitologia); para demais casos, veja Mercúrio.
@@ -86,8 +86,7 @@ const Planets = (props) => {
       Plutão foi descoberto em 1930 por Clyde Tombaugh e até 2006 foi considerado o nono planeta do Sistema Solar. A partir de 1992, com a descoberta de vários outros objetos similares a ele no Sistema Solar externo, sua classificação como um planeta começou a ser questionada, especialmente após a d"
       img_url="https://hypescience.com/wp-content/uploads/2015/07/plutao.jpg"
       Link="https://pt.wikipedia.org/wiki/Plut%C3%A3o"/>
-      
-    </div>
+      </div>
   );
 };
 
