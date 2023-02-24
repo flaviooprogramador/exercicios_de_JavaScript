@@ -1,10 +1,17 @@
 import React, { Fragment } from "react";
 import Planet from "./planet";
 import DescriptionLink from "../shared/gray_img/WhitchLink/DescriptionWhitchLink";
+
+const showMessage = () => {
+  console.log('Meu Primeiro evento')
+}
+
+
 const Planets = (props) => {
   return (
     <div>
     <h3>Planet List</h3>
+    <button onClick={showMessage}>show messsage!</button>
       <hr/>
       <Planet name="Mercurio"
       Text=" Para o deus da mitologia romana, consulte Mercúrio (mitologia); para demais casos, veja Mercúrio.
