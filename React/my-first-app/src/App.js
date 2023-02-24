@@ -4,7 +4,7 @@ import Planets from './components/planets';
 
 function App() {
   return (
-    <div>
+    <div class="p-3 mb-2 bg-dark text-white text-center"> 
         <Planets/>
     </div>
     

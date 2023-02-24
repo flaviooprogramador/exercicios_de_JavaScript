@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
 import './style.css'
 
-const GrayImg = () => {
+const GrayImg = (props) => {
   return (
-    <img  class="gray-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg"
-    ></img>
+    <img  class="gray-img" src={props.img_url}></img>
   
   );
 }
