@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import Planet from "./planet";
 import DescriptionLink from "../shared/gray_img/WhitchLink/DescriptionWhitchLink";
 
-const showMessage = () => {
-  console.log('Meu Primeiro evento')
+const clickOnPlanet = (name) => {
+  console.log(`Um click no planeta: ${name}`)
 }
 
 
@@ -11,7 +11,7 @@ const Planets = (props) => {
   return (
     <div>
     <h3>Planet List</h3>
-    <button onClick={showMessage}>show messsage!</button>
+    <button>show messsage!</button>
       <hr/>
       <Planet name="Mercurio"
       Text=" Para o deus da mitologia romana, consulte Mercúrio (mitologia); para demais casos, veja Mercúrio.
@@ -80,8 +80,10 @@ const Planets = (props) => {
       Mercúrio é o menor[nota 1][nota 2] e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar. Mercúrio completa três rotações em torno de seu eixo a cada duas órbitas. O periélio da órbita de Mercúrio apresenta uma precessão de 5 600 segundos de arco por século, um fenômeno completamente explicado apenas a partir do século XX pela Teoria da Relatividade Geral formulada por Albert Einstein.[2] A sua aparência é brilhante quando observado da Terra, tendo uma magnitude aparente que varia de −2,6 a 5,7, embora não seja facilmente observado pois sua separação angular do Sol é de apenas 28,3º. Uma vez que Mercúrio normalmente se perde no intenso brilho solar, exceto em eclipses solares, só pode ser observado a olho nu durante o crepúsculo matutino ou vespertino.
       
       Em uma média ao longo do tempo, Mercúrio (e não Vênus) é o planeta mais próximo da Terra, do que os outros planetas do Sistema Solar, como demostrado em um estudo publicado em março de 2019 na revista Physics Today [en]. Segundo os pesquisadores Tom Stockman, Gabriel Monroe e Samuel Cordner, os m"
+      
       img_url="https://th.bing.com/th/id/R.70189d5584e58ca206824e275cb99fa4?rik=FnB%2fhrc0GRKGdw&riu=http%3a%2f%2fwww.mundoled.com.do%2fwp-content%2fuploads%2f2015%2f01%2fmercurio.jpg&ehk=nh2JEzj9AWjcoD7maQOFk6zSPFKZdFc7Bxno4%2bF8s7g%3d&risl=&pid=ImgRaw&r=0"
       Link="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)"
+      clickOnPlanet={clickOnPlanet}
       />
 
       <Planet
@@ -92,7 +94,9 @@ const Planets = (props) => {
       
       Plutão foi descoberto em 1930 por Clyde Tombaugh e até 2006 foi considerado o nono planeta do Sistema Solar. A partir de 1992, com a descoberta de vários outros objetos similares a ele no Sistema Solar externo, sua classificação como um planeta começou a ser questionada, especialmente após a d"
       img_url="https://hypescience.com/wp-content/uploads/2015/07/plutao.jpg"
-      Link="https://pt.wikipedia.org/wiki/Plut%C3%A3o"/>
+      Link="https://pt.wikipedia.org/wiki/Plut%C3%A3o"
+      clickOnPlanet={clickOnPlanet}/>
+
       </div>
   );
 };

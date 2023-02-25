@@ -4,7 +4,7 @@ import DescriptionLink from "../../shared/gray_img/WhitchLink/DescriptionWhitchL
 
 const Planet = (props) => {
   return (
-    <div class="p-3 mb-2 bg-dark text-white container text-center">
+    <div class="p-3 mb-2 bg-dark text-white container text-center " onClick={() => props.clickOnPlanet(props.name)}>
       <h4>{props.name}</h4>
       <DescriptionLink Text={props.Text}
       Link={props.Link}/>
