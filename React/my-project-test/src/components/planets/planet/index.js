@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import GrayImg from "../../shared/gray_img";
 import DescriptionLink from "../../shared/gray_img/WhitchLink/DescriptionWhitchLink";
 
-const Planet = (props) => {
-
+  const Planet = (props) => {
+  const names =  ['a','b', 'c' , 'd']
+  
   let title;
   if(props.title_whith_underline)
   title = <h4> <u>{props.name}</u></h4>
@@ -16,6 +17,15 @@ const Planet = (props) => {
       <DescriptionLink Text={props.Text}
       Link={props.Link}/>
       <GrayImg img_url={props.img_url} gray={props.gray} />
+
+      <h4> satelites </h4>
+      <ul> 
+        { 
+           names.map((n) => 
+          <li> satelites {n} </li>
+          ) }
+      </ul>
+      <hr/>
     </div>
   );
 };
