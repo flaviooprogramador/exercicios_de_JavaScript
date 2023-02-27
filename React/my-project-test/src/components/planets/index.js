@@ -24,28 +24,25 @@ class Planets extends React.Component{
       ]
     }
   }
-  
+
   render(){
       return (
-        <div>
+        <Fragment>
+        
         <h3>Planet List</h3>
         <button>show messsage!</button>
           <hr/>
-          <Planet name={this.state.planets[0].name}
-          Text={this.state.planets[0].Text}
-          img_url={this.state.planets[0].img_url}
-          clickOnPlanet={clickOnPlanet}
-          title_whith_underline={true}
-          gray={true}
-          />
-    
-          <Planet
-          name={this.state.planets[1].name}
-          Text={this.state.planets[1].Text}
-          img_url={this.state.planets[1].img_url}
-          clickOnPlanet={clickOnPlanet}/>
-    
-          </div>
+          {
+            this.state.planets.map((planet) =>
+          <Planet 
+            name={planet.name}
+            Text={planet.Text}
+            img_url={planet.img_url}
+            
+            />
+    ) }
+    </Fragment>
+  
       );
     };
   }
@@ -53,6 +50,4 @@ class Planets extends React.Component{
 const clickOnPlanet = (name) => {
   console.log(`Um click no planeta: ${name}`)
 }
-
-
 export default Planets;
