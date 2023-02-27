@@ -25,12 +25,20 @@ class Planets extends React.Component{
     }
   }
 
+  removeLast = () =>{
+    let new_planets = [...this.state.planets]
+    new_planets.pop()
+    this.setState(state => ({
+      planets: new_planets
+    }))
+  }
+
   render(){
       return (
         <Fragment>
         
         <h3>Planet List</h3>
-        <button>show messsage!</button>
+        <button onClick={this.removeLast}>Remove Last</button>
           <hr/>
           {
             this.state.planets.map((planet) =>
