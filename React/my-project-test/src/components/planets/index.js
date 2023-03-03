@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 import Planet from "./planet";
 import DescriptionLink from "../shared/gray_img/WhitchLink/DescriptionWhitchLink";
 
-class Planets extends React.Component{
 
-  constructor(props){
-    super(props);
+
+
+const Planets = () => {
+  constructor(props)
+  super(props);
     this.state = {
       planets: [
         {
@@ -22,8 +24,9 @@ class Planets extends React.Component{
           img_url:"https://hypescience.com/wp-content/uploads/2015/07/plutao.jpg"
      }
       ]
+    
     }
-  }
+
 
   removeLast = () =>{
     let new_planets = [...this.state.planets]
@@ -40,7 +43,7 @@ class Planets extends React.Component{
     }))
   }
   
-  render(){
+  render()
       return (
         <Fragment>
         
@@ -62,7 +65,7 @@ class Planets extends React.Component{
   
       );
     };
-  }
+  
 
 const clickOnPlanet = (name) => {
   console.log(`Um click no planeta: ${name}`)
