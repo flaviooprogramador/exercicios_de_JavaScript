@@ -1,5 +1,15 @@
-(async () => {
-const Planet = require("./models/Planet");
+const express = require ("express")
+const routes = require("../src/routes")
+
+const app = express()
+
+app.use(express.json())
+app.use(routes)
+
+app.listen(3000)
+
+/*(async () => {
+const Planet = require("../models/Planet");
 
   const deletePlanets = await Planet.findByPk(2);
   
