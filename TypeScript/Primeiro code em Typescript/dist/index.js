@@ -4,7 +4,7 @@ function sendSpace(name, captain) {
         captain: captain,
         speed: 20,
         inMission: true,
-        crew: []
+        crew: [],
     };
     alert("A nave ".concat(spaceship.name, " comandada pelo Capit\u00E3o ").concat(spaceship.captain));
     return spaceship;
@@ -14,7 +14,7 @@ function acelerate(targetSpeed, spaceship) {
         alert("Reduzindo a velocidade da ".concat(spaceship.name, " para ").concat(targetSpeed, "..."));
     }
     else if (spaceship.speed < targetSpeed) {
-        alert(("Aumentando a velocidade da  ".concat(spaceship.name, " para ").concat(targetSpeed, "...")));
+        alert("Aumentando a velocidade da  ".concat(spaceship.name, " para ").concat(targetSpeed, "..."));
     }
     else {
         alert("Mantendo a velocidade da ".concat(spaceship.name, "..."));
@@ -22,4 +22,6 @@ function acelerate(targetSpeed, spaceship) {
 }
 var spaceshipName = prompt("Insira o nome da nave a ser enviada");
 var spaceshipCaptain = prompt("Insira o nome do capit\u00E3o da nave.");
-sendSpace(spaceshipName, spaceshipCaptain);
+var currentShip = sendSpace(spaceshipName, spaceshipCaptain);
+var speed = Number(prompt("Insira a velocidade para qual deseja acelerar."));
+acelerate(speed, currentShip);
