@@ -16,3 +16,15 @@ const spaceship = {
   speed: 0,
   inMission: false
 }
+
+const pilot = "Han solo"
+
+spaceship.name = "Milleniun Falcon"
+
+setPilot(pilot, spaceship)
+
+accelerate(50,spaceship)
+
+sendToMission(spaceship)
+
+console.log(spaceship)
