@@ -44,13 +44,13 @@ function firstMenuOption() {
     if (confirmation) {
         addSpaceship(name, pilot, crewLimit);
     }
-    function secondMenuOption() {
-        const member = prompt(`Qual é o nome do tripulante`);
-        const spaceshipName = prompt(`Para qual nave ${member} deverá ser designado?`);
-        const spaceship = findSpaceship(spaceshipName);
-        if (spaceship) {
-            const confirmation = confirm(`Confirma a conclusão de ${member} na Tripulação da ${spaceship.name}?`);
-        }
+}
+function segundoOption() {
+    const member = prompt('Qual é o nome do tripulante?');
+    const spaceshipName = prompt(`Para qual nave ${member} deverá ser designado?`);
+    const spaceship = findSpaceship(spaceshipName);
+    if (spaceship) {
+        const confirmation = confirm(`Confirma a inclusão de ${member} na tripulação da ${spaceship.name}?`);
         if (confirmation) {
             addCrewMember(member, spaceship);
         }
@@ -89,4 +89,25 @@ while (userOption !== 5) {
   3- Enviar nave em Missão
   4- Listar naves Registradas
   5- Encerrar`;
+    userOption = Number.parseInt(prompt(menu));
+    switch (userOption) {
+        case 1:
+            firstMenuOption();
+            break;
+        case 2:
+            segundoOption();
+            break;
+        case 3:
+            thirdMenuOption();
+            break;
+        case 4:
+            fourthMenuOption();
+            break;
+        case 5:
+            alert('Encerrando o sistema...');
+            break;
+        default:
+            alert('Opção inválida! Retornando ao painel principal...');
+            break;
+    }
 }
