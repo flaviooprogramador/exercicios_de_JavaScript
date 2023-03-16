@@ -1,5 +1,7 @@
 import { spaceship } from "./import";
 
+import * as lodash from "lodash"
+
 interface BattleSaceship extends spaceship {
   weapons: number
 }
@@ -10,3 +12,6 @@ let xwing: BattleSaceship  = {
   speed: 50,
   weapons: 4
 }
+
+
+console.log(lodash.camelCase(xwing.pilot))

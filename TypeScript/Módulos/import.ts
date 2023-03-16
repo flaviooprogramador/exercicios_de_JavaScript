@@ -3,3 +3,4 @@ export interface spaceship {
   pilot: string
   speed: number
 }
+
